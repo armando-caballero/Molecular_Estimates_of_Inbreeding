@@ -1,0 +1,47 @@
+OUTPUT
+NINDNP=500 NCRO=4338 TOTLOCI=130140 REPS=2000 
+NSEGLOCNP=130140 numSNPgen0=81205 numQTLgen0=0 numSNPseg=36051 numQTLseg=0 
+LEQ_NP=0.000000
+
+MEAN F
+coh   q     Fped    Fibd    Fvr1BP  Fvr2BP  Fyang1BP Fyang2BP FLH1BP  FLH2BP  FhomBP
+23  0.1325  0.1043  0.1018  -0.1274  -0.1182  -0.1274  -0.1182  -0.1274  -0.1182  0.6025
+
+SD F
+coh   q     Fped    Fibd    Fvr1BP  Fvr2BP  Fyang1BP Fyang1BP FLH1BP  FLH2BP  FhomBP
+23  0.2870  0.0000  0.0096  0.0111  0.0092  0.0111  0.0092  0.0111  0.0092  0.0073
+
+VARIANCE F
+coh   Fped    Fibd    Fvr1BP  Fvr2BP  Fyang1BP Fyang2BP FLH1BP  FLH2BP  FhomBP
+23  0.001335  0.002444  0.008140  0.021805  0.005117  0.003541  0.006753  0.020169  0.000839
+
+SD VAR F
+coh   Fped    Fibd    Fvr1BP  Fvr2BP  Fyang1BP Fyang2BP FLH1BP  FLH2BP  FhomBP
+23  0.000000  0.000727  0.001955  0.006240  0.001285  0.000938  0.001852  0.006564  0.000229
+
+ID
+nind   IDFped  IDFibd  IDFvr1  IDFvr2   IDFyang1   IDFyang2   IDFLH1   IDFLH2   IDFhom
+263    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+
+SD ID
+nind IDFped  IDFibd  IDFvr1  IDFvr2  IDFyang1 IDFyang2 IDFLH1 IDFLH2 IDFhom
+263  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+
+MEAN Correlations (at generation 23) with frequencies of cohort 23
+        FibdBP  Fvr1BP  Fvr2BP  Fyang1BP Fyang2BP FLH1BP FLH2BP FhomBP
+Fped   0.7449  0.2383 -0.0521  0.4618  0.5086  0.5442  0.4940  0.5442
+Fibd           0.3416  0.0179  0.6374  0.6866  0.7398  0.5704  0.7398
+Fvr1BP                 0.8425  0.8468  0.7755  0.3776 -0.2125  0.3776
+Fvr2BP                         0.5476  0.4562  0.0307 -0.6423  0.0307
+Fyang1BP                               0.9857  0.8050  0.2616  0.8050
+Fyang2BP                               	       0.8601  0.3680  0.8601
+FLH1BP                                                 0.7030  1.0000
+FLH2BP                                                       0.7030
+
+MEAN Ne (cohorts 17-23)
+NeFped  NeFibd  NeFvr1BP NeFvr2BP  NeFyang1BP NeFyang2BP NeFLH1BP NeFLH2BP NeFhomBP
+28.7644  29.7306  -3.5725  0.0608  -10.9633  -6.7703  20.6511  10.4982  20.6511
+
+SD Ne
+NeFped  NeFibd  NeFvr1BP NeFvr2BP  NeFyang1BP NeFyang2BP NeFLH1BP NeFLH2BP NeFhomBP
+0.0000  2.8628  0.5735  0.4162  1.2593  1.3045  2851.1911  1.5231  2851.1911
