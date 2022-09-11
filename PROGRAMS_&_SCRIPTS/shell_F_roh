@@ -1,0 +1,41 @@
+
+./plink1.9 --file data --make-bed --write-snplist --out data
+
+#At least 100 SNPs
+#--homozyg-snp 100
+#At least one SNP per 50 kb
+#--homozyg-density 50
+#Two SNPs in the same ROH no more than 1000 kb apart
+#--homozyg-gap 1000
+
+./plink1.9  --file data  --homozyg-kb 100 --homozyg --out data
+sed '1d' data.hom.indiv > temp1
+awk '{print ($5/2250000)}' temp1 > temp2
+cp data.hom data.hom.100
+cp data.hom.indiv data.hom.indiv.100
+cp data.hom.summary data.hom.summary.100
+#rm temp1
+
+rm data.hom.indiv
+./plink1.9  --file data  --homozyg-kb 1000 --homozyg --out data
+sed '1d' data.hom.indiv > temp3
+awk '{print ($5/2250000)}' temp3 > temp4
+cp data.hom data.hom.1000
+cp data.hom.indiv data.hom.indiv.1000
+cp data.hom.summary data.hom.summary.1000
+#rm temp3
+
+rm data.hom.indiv
+./plink1.9  --file data  --homozyg-kb 5000 --homozyg --out data
+sed '1d' data.hom.indiv > temp5
+awk '{print ($5/2250000)}' temp5 > temp6
+cp data.hom data.hom.5000
+cp data.hom.indiv data.hom.indiv.5000
+cp data.hom.summary data.hom.summary.5000
+#rm temp5
+
+paste temp2 temp4 temp6 > temp7
+#rm temp2
+#rm temp4
+#rm temp6
+mv temp7 data.F
